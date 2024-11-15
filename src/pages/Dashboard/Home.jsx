@@ -27,7 +27,7 @@ const Home = () => {
             uri: item.uri
           }
           return data
-        }));
+        })); 
       })
     }
   }, [accessToken])
