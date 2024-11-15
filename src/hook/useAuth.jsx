@@ -1,15 +1,17 @@
 import axios from 'axios'
-import  { useEffect, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import { API_REQUEST } from "./useEnv"
+import { Context } from "../context/Context"
 const useAuth = (code) => {
-    console.log(API_REQUEST);
-    const [accesToken,setAccesToken] = useState(null)
+  const { accessToken, setaccessToken } = useContext(Context)
   useEffect(() => {
-    axios.post(`${API_REQUEST}/login`,{code}).then(res =>{
-        console.log(res.data);
+    axios.post(`${API_REQUEST}/login`, { code }).then(res => {
+      setaccessToken(res.data.accesToken);
+      history.pushState({}, null, "/")
     })
-    .catch(() => location = "/")
-  },[])
+      .catch(() => location = "/")
+  }, [])
+  return accessToken
 }
 
 export default useAuth

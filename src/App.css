@@ -78,3 +78,19 @@
 }
 
 /* Animate btn */
+
+
+.login-bg{
+    background: linear-gradient(180deg, #3333A3 5.09%, #121212 33.4%);
+}
+.navigateBtn{
+    background-color: rgba(0, 0, 0, 50%);
+}
+.bg-item{
+    background-color: rgba(0, 0, 0, 10%);
+    
+}
+.music-card-item{
+    background-color: rgba(0, 0, 0, 41%);
+
+}
