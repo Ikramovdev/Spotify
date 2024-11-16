@@ -15,9 +15,9 @@ const MusicList = ({API,title}) => {
       spotifyApi.setAccessToken(accessToken)
     }, [accessToken])
 
-    const [albums,setAlbums] = useState()
+    const [albums,setAlbums] = useState([])
     useEffect(()=>{
-        spotifyApi.searchAlbums({API}).then(res => {
+        spotifyApi.searchAlbums(API).then(res => {
             setAlbums(res.body.albums.items.map(item => {
                 const data = {
                     id:item.id,
@@ -26,19 +26,18 @@ const MusicList = ({API,title}) => {
                     albumImg : item.images[0].url,
                     uri:item.uri
                 }
+                return data
             }))
         })
     },[accessToken])
-
-
   return (
     <div className='px-[40px]'>
-        <div className='flex items-center justify-between'>
+        <div className='flex items-center justify-between pb-[21px]'>
             <h2 className='font-bold text-[30px] text-white left-[37.95px]'>{title}</h2>
             <button className='font-bold text-[16px] text-[#ADADAD] hover:scale-[1.2] duration-300 left-[20px]'>SEE ALL</button>
         </div>
-        <div className='flex justify-between overflow-y-auto gap-[25px ]'>
-            {albums?.map(item => <MusicCard key={item.id}/>)}
+        <div className='flex justify-between overflow-x-auto gap-[25px] rounded-md'>
+            {albums?.map(item => <MusicCard item={item} key={item.id}/>)}
         </div>
     </div>
   )

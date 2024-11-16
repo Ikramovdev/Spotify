@@ -6,7 +6,7 @@ const useAuth = (code) => {
   const { accessToken, setaccessToken } = useContext(Context)
   useEffect(() => {
     axios.post(`${API_REQUEST}/login`, { code }).then(res => {
-      setaccessToken(res.data.accesToken);
+      setaccessToken(res.data.accessToken);
       history.pushState({}, null, "/")
     })
       .catch(() => location = "/")

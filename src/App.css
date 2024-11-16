@@ -91,6 +91,14 @@
     
 }
 .music-card-item{
+    min-width: 224px;
     background-color: rgba(0, 0, 0, 41%);
 
+}
+.single-bg{
+    background: linear-gradient(180deg, #DEF628 5.09%, #121212 43.28%);
+
+}
+.singleArtistInfo{
+    box-shadow: 10px 0px 10px 5px black;
 }
