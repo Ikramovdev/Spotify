@@ -86,6 +86,21 @@ function SingleLikeIcon() {
 
     )
 }
+function SingleActiveLikeIcon() {
+    return (
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clipPath="url(#clip0_7202_396)">
+                <path d="M14.0009 6.03963C16.4673 3.74352 20.2787 3.81973 22.6548 6.28786C25.0299 8.75708 25.1118 12.6895 22.9026 15.2546L13.9988 24.5L5.09703 15.2546C2.88787 12.6895 2.97082 8.75055 5.34482 6.28786C7.72303 3.823 11.5271 3.74025 14.0009 6.03963Z" fill="#63CF6C" />
+            </g>
+            <defs>
+                <clipPath id="clip0_7202_396">
+                    <rect width="28" height="28" fill="white" />
+                </clipPath>
+            </defs>
+        </svg>
+
+    )
+}
 function SingleUploadIcon() {
     return (
         <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -162,9 +177,23 @@ function SiteBarUserIcon() {
 function SiteBarMoreIcon() {
     return (
         <svg width="102" height="42" viewBox="0 0 102 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path opacity="0.2" fillRule="evenodd" clipRule="evenodd" d="M0 5C0 2.23858 2.23858 0 5 0H97C99.7614 0 102 2.23858 102 5C102 7.76142 99.7614 10 97 10H5C2.23858 10 0 7.76142 0 5ZM0 21C0 18.2386 2.23858 16 5 16H74C76.7614 16 79 18.2386 79 21C79 23.7614 76.7614 26 74 26H5C2.23858 26 0 23.7614 0 21ZM5 32C2.23858 32 0 34.2386 0 37C0 39.7614 2.23858 42 5 42H74C76.7614 42 79 39.7614 79 37C79 34.2386 76.7614 32 74 32H5Z" fill="white"/>
-        </svg>        
+            <path opacity="0.2" fillRule="evenodd" clipRule="evenodd" d="M0 5C0 2.23858 2.23858 0 5 0H97C99.7614 0 102 2.23858 102 5C102 7.76142 99.7614 10 97 10H5C2.23858 10 0 7.76142 0 5ZM0 21C0 18.2386 2.23858 16 5 16H74C76.7614 16 79 18.2386 79 21C79 23.7614 76.7614 26 74 26H5C2.23858 26 0 23.7614 0 21ZM5 32C2.23858 32 0 34.2386 0 37C0 39.7614 2.23858 42 5 42H74C76.7614 42 79 39.7614 79 37C79 34.2386 76.7614 32 74 32H5Z" fill="white" />
+        </svg>
     )
 }
+function ClockIcon() {
+    return (
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clipPath="url(#clip0_7202_1439)">
+                <path fillRule="evenodd" clipRule="evenodd" d="M23 14C23 18.9706 18.9706 23 14 23C9.02944 23 5 18.9706 5 14C5 9.02944 9.02944 5 14 5C18.9706 5 23 9.02944 23 14ZM25 14C25 20.0751 20.0751 25 14 25C7.92487 25 3 20.0751 3 14C3 7.92487 7.92487 3 14 3C20.0751 3 25 7.92487 25 14ZM14.5 8.5H12.5V15.5H18V13.5H14.5V8.5Z" fill="#B3B3B3" />
+            </g>
+            <defs>
+                <clipPath id="clip0_7202_1439">
+                    <rect width="28" height="28" fill="white" />
+                </clipPath>
+            </defs>
+        </svg>
 
-export { HomeActiveIcon, HomeInActiveIcon, SearchIcon, LibraryIcon, AddIcon, LikeIcon, ArrowIcon, SinglePlayIcon, SingleLikeIcon, SingleUploadIcon, SingleMoreIcon, SingleSearchIcon, SingleSelectArrow, UserAddIcon, BackIcon ,SiteBarUserIcon,SiteBarMoreIcon}
+    )
+}
+export { HomeActiveIcon, HomeInActiveIcon, SearchIcon, LibraryIcon, AddIcon, LikeIcon, ArrowIcon, SinglePlayIcon, SingleLikeIcon, SingleUploadIcon, SingleMoreIcon, SingleSearchIcon, SingleSelectArrow, UserAddIcon, BackIcon, SiteBarUserIcon, SiteBarMoreIcon, ClockIcon ,SingleActiveLikeIcon}
